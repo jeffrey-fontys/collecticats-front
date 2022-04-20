@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from "../assets/CollectiCats_logo_trans.png";
 
 import {
   Collapse,
   Container,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -19,6 +19,10 @@ import {
 } from "reactstrap";
 
 import { useAuth0 } from "@auth0/auth0-react";
+
+function Logo(props) {
+  return <img className={props.className} src={logo} alt="CollectiCats logo"></img>;
+}
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +43,7 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar color="light" light expand="md">
         <Container>
-          <NavbarBrand className="logo" />
+          <Logo className="navbar-logo" />
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>

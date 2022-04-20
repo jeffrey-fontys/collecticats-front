@@ -33,3 +33,9 @@
 .result-block-container .result-block {
   opacity: 1;
 }
+
+.navbar-logo {
+  display: inline-block;
+  height: 2.5rem;
+  margin-right: 60px;
+}
