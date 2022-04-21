@@ -27,9 +27,9 @@ jobs:
       with:
         node-version: 16
         cache: 'npm'
+    - run: cat ${{ secrets.AUTH_CONFIG }} > ./src/auth_config.json
     - run: npm ci
-    - if: false
-      run: npm run build --if-present
+    - run: npm run build --if-present
     - run: npm test
 
   publish:
