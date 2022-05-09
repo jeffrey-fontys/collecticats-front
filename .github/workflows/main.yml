@@ -75,6 +75,10 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
+      - env:
+          AUTH_CONFIG: ${{ secrets.AUTH_CONFIG }}
+        run: echo "$AUTH_CONFIG" > ./src/auth_config.json
+
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
