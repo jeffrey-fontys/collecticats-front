@@ -11,7 +11,7 @@ function CanBreed(cat) {
 function CatCard(props) {
 
     return (
-        <Col className="col-md-3">
+        <Col md="3">
             <Card className="h-100">
                 <input type="checkbox"></input>
                 <img 
