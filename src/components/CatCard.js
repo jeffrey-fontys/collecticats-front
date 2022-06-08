@@ -12,7 +12,7 @@ function CatCard(props) {
 
     return (
         <Col>
-            <Card>
+            <Card className="h-100">
                 <input type="checkbox"></input>
                 <img 
                     className="card-img-top"
@@ -22,6 +22,8 @@ function CatCard(props) {
                     <h5 className="card-title"><strong>Name:</strong> { props.cat.name }</h5>
                     <p className="card-text"><strong>Description:</strong><br />{ props.cat.description }</p>
                     <p className="card-text"><strong>Can breed:</strong> { CanBreed(props.cat) }</p>
+                </div>
+                <div className="card-footer">
                     <a href="#" className="btn btn-primary">Details</a>
                 </div>
             </Card>
