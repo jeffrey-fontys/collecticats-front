@@ -8,7 +8,7 @@ import Overview from "../components/Overview";
 const Home = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
 
-  if (!isAuthenticated) {
+  if (isAuthenticated) {
     return (
       <Fragment>
         <Overview />
