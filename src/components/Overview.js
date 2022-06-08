@@ -40,7 +40,7 @@ const Overview = () => {
                 </Col>
             </Row>
 
-            <Row className="row-cols-1 row-cols-md-3 g-4 mb-3">
+            <Row className="row-cols-1 row-cols-md-4 g-4 mb-3">
                 { cats && 
                     cats.map((cat, key) => (
                         <CatCard 
