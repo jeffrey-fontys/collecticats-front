@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Row } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import CatApi from "../utils/catApi";
 import CatCard from "./CatCard";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -29,11 +29,15 @@ const Overview = () => {
     return (
         <Fragment>
             <Row>
-                <h1>Hi { user.nickname }! These are your cats!</h1>
+                <Col>
+                    <h1>Hi { user.nickname }! These are your cats!</h1>
+                </Col>
             </Row>
 
             <Row className="mb-3">
-                <a href="#" className="btn btn-primary" onClick={ notReady }>Breed selected cats</a>
+                <Col>
+                    <a href="#" className="btn btn-primary" onClick={ notReady }>Breed selected cats</a>
+                </Col>
             </Row>
 
             <Row className="row-cols-1 row-cols-md-3 g-4 mb-3">
