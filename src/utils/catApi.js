@@ -1,13 +1,8 @@
 export default class CatApi {
-    API_URL;
-
-    constructor() {
-        this.API_URL = "http://localhost:8080/cat-service/cats";
-    }
 
     async GetAll() {
         let res = await
-        fetch(this.API_URL, {
+        fetch(process.env.REACT_APP_API_URL + "/cat-service/cats", {
             method: "GET"
         });
 
