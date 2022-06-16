@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 import Overview from "../components/Overview";
 
 const Home = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { isAuthenticated } = useAuth0();
 
   if (isAuthenticated) {
     return (

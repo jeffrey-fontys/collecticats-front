@@ -36,7 +36,7 @@ const Overview = () => {
 
             <Row className="mb-3">
                 <Col>
-                    <a href="#" className="btn btn-primary" onClick={ notReady }>Breed selected cats</a>
+                    <a href="/" className="btn btn-primary" onClick={ notReady }>Breed selected cats</a>
                 </Col>
             </Row>
 
