@@ -1,9 +1,13 @@
 ![CollectiCats logo](./src/assets/CollectiCats_logo_trans.png)
 
 [![Main](https://github.com/jeffrey-fontys/collecticats-front/actions/workflows/main.yml/badge.svg)](https://github.com/jeffrey-fontys/collecticats-front/actions/workflows/main.yml)
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=jeffrey-fontys_collecticats-front)](https://sonarcloud.io/summary/new_code?id=jeffrey-fontys_collecticats-front)  
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jeffrey-fontys_collecticats-front&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jeffrey-fontys_collecticats-front)  
+[![Alpine Linux](https://img.shields.io/badge/Alpine_Linux-%230D597F.svg?style=for-the-badge&logo=alpine-linux&logoColor=white)](https://www.alpinelinux.org/)
+[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://www.javascript.com/)
+[![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
 
 CollectiCats is a web based collecting/trading game where players can collect virtual cats and trade them with each other. These cats have unique properties as a result of their genes. Try to collect as many special and rare cats as you can!
 
@@ -27,7 +31,7 @@ CollectiCats is a web based collecting/trading game where players can collect vi
 
 #### Prerequisites
 
-In order to run the CollectiCats front end with this route, please make sure that up-to-date versions of the following application(s) are installed on your system:
+In order to run the CollectiCats front end with this route, please make sure that up-to-date versions of the following applications are installed on your system:
 
 - Node
 - Node Package Manager (NPM)
@@ -83,7 +87,7 @@ In order to run the CollectiCats front end with this route, please make sure tha
 Open your terminal emulator and run the following command:
 
 ```
-docker run -e REACT_APP_API_URL="http://example:8080" -p 3000:3000 --name examplename --rm jeffreyfontys/collecticats-front:latest
+docker run -e REACT_APP_API_URL="http://example:8080" -p 3000:3000 --name examplename --rm -d jeffreyfontys/collecticats-front:latest
 ```
 
 Docker should now start pulling the latest CollectiCats image from Docker Hub and start it up when it is finished.
